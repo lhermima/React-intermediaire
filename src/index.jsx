@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Survey from './pages/Survey'
 import Results from './pages/Results'
-import Freelance from './pages/Freelances'
+import Freelances from './pages/Freelances'
 import Header from './components/Header'
 import Error from './components/Error'
 
@@ -15,7 +15,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/survey/:questionNumber" element={<Survey />} />
-        <Route path="/freelances" element={<Freelance />} />
+        <Route path="/freelances" element={<Freelances />} />
         <Route path="/results" element={<Results />} />
         <Route path="*" element={<Error />} />
       </Routes>
