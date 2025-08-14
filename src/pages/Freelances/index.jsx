@@ -34,7 +34,7 @@ const LoaderWrapper = styled.div`
 `
 
 function Freelances() {
-  const [freelancersList, setFreelancersList] = useState([])
+  const [freelancers, setFreelancersList] = useState([])
   const [isDataLoading, setDataLoading] = useState(false)
   const [error, setError] = useState(false)
 
@@ -70,7 +70,7 @@ function Freelances() {
         </LoaderWrapper>
       ) : (
         <CardsContainer>
-          {freelancersList.map((profile, index) => (
+          {freelancers.map((profile, index) => (
             <Card
               key={`${profile.name}-${index}`}
               label={profile.jobTitle}
